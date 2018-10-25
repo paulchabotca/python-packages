@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: tlwanstatus
+Version: 0.0.1
+Summary: Retrieves status of wan device on a TP-Link TD-W9970
+Home-page: https://github.com/paulchabotca/tlwanstatus
+Author: Paul Chabot
+Author-email: email@paulchabot.ca
+License: UNKNOWN
+Description: # TL Wan Status
+        
+        Retrieves status of wan device on a TP-Link TD-W9970. I imagine it would work on other TP-Link devices w/wo
+        some modifications..
+        
+        ## Usage
+        
+        > use the sample dotenv or create one in your home directory
+        
+        *.wanstat.env*
+        ```
+        WANSTAT_ROUTERIP="192.168.0.1"
+        WANSTAT_USERNAME="Username"
+        WANSTAT_PASSWORD="Password"
+        WANSTAT_DEVICE="pppoe_ptm_35_3_d"
+        ```
+        ### Commands
+        
+        
+        *device-status*
+        
+        Returns connection state as one of a few self explanatory strings ( *meant to be used as or with a service.* )
+        - Connected
+        - Initializing
+        - Disconnected
+        
+        *list-wans*
+        
+        Returns all wan connections from TD-W9970. Works with or without the dotenv. 
+        
+        Options:
+        --action [all|type|vpid|ipmask|gateway|dns|status]
+                                        select information to return
+        --routerip TEXT                 The person to greet.
+        --username TEXT                 Username to WAN device
+        --password TEXT                 Password for wan device.
+        --device TEXT                   Optional Name of wan device, otherwise
+                                        returns all
+        --version
+        --help                          Show this message and exit.
+        
+        [www.paulchabot.ca](https://www.paulchabot.ca)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

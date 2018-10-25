@@ -1,0 +1,7 @@
+tlwanstatus.egg-info/PKG-INFO
+tlwanstatus.egg-info/SOURCES.txt
+tlwanstatus.egg-info/dependency_links.txt
+tlwanstatus.egg-info/entry_points.txt
+tlwanstatus.egg-info/requires.txt
+tlwanstatus.egg-info/top_level.txt
+tplwanstatus/wanstatus.py

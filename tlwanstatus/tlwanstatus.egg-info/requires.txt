@@ -1,0 +1,4 @@
+Click
+BeautifulSoup4
+Selenium
+Python-Dotenv
